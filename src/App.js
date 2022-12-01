@@ -16,8 +16,9 @@ function App() {
     
   };
   console.log(usd, price)
-  const finalValue = usd / price.split(",")[0]
-  const symbolValue = price.split(",")[1]
+  const finalValue = usd / price.toString().split(",")[0]
+  const symbolValue = price.toString().split(",")[1]
+  console.log(typeof "price")
 
   useEffect(() => {
     fetch("https://api.coinpaprika.com/v1/tickers")
