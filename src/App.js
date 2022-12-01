@@ -15,10 +15,10 @@ function App() {
     setPrice(event.target.value);
     
   };
-  console.log(usd, price)
+  
   const finalValue = usd / price.toString().split(",")[0]
   const symbolValue = price.toString().split(",")[1]
-  console.log(typeof "price")
+
 
   useEffect(() => {
     fetch("https://api.coinpaprika.com/v1/tickers")
