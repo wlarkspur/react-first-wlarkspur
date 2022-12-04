@@ -19,7 +19,7 @@ function Detail() {
   }, []);
   console.log(movieDetail);
   return (
-    <div>
+    <div className="detail">
       <h2>{movieDetail.title}</h2>
       <img src={movieDetail.medium_cover_image} alt="Cover img" />
       <h2>Year: {movieDetail.year}</h2>
